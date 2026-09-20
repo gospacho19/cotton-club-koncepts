@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cotton Club · vakars starp priedēm · Abavas iela 12, Jūrmala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+/* Cotton Club, v3 — the evening, in the dark. A restaurant priced "very expensive" among the pines,
+   whose guests write about banquets, anniversaries and the host. The page is one evening at Abavas
+   iela 12 told in chapters by the hour — each chapter a large photograph on near-black, the hour set
+   in Bodoni as its title. Cream text, one gold hairline between chapters, nothing else gold.
+   No text over photographs; the entrance photograph runs to the edge of the screen beside the words. */
+:root{--bg:#0f0c0a;--bg2:#181411;--cream:#efe6d6;--soft:#cfc4b2;--mute:#8f8578;--gold:#c9a45c;--line:rgba(201,164,92,.28);--serif:"Bodoni Moda",Didot,serif;--text:"EB Garamond",Garamond,serif;--pad:28px;--max:1240px;--edge:max(var(--pad),calc((100vw - var(--max)) / 2 + var(--pad)))}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--cream);font:400 1.15rem/1.55 var(--text)}
+img{display:block;max-width:100%;height:auto}
+[data-lang][hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.notice{background:#000;color:#a89f91;font:500 .8rem/1.4 var(--text);text-align:center;padding:6px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.notice b{color:#fff}
+.top{display:flex;justify-content:space-between;align-items:center;height:88px}
+.name{font:500 .95rem/1 var(--serif);letter-spacing:.26em;text-transform:uppercase;color:var(--cream);text-decoration:none}
+.name small{display:block;font:400 .85rem/1.4 var(--text);letter-spacing:0;text-transform:none;color:var(--mute);margin-top:7px}
+.lang a{font:500 .9rem/1 var(--text);color:var(--cream);text-decoration:none;margin-left:18px;opacity:.55;cursor:pointer;padding-bottom:3px;letter-spacing:.06em}
+.lang a.on{opacity:1;border-bottom:1px solid var(--gold)}
+.k{font:400 .9rem/1.4 var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin:0 0 24px}
+/* hero: words left on the line of the page, the entrance to the edge of the screen */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center}
+.hero .say{padding:40px 56px 64px var(--edge)}
+h1{font:italic 400 clamp(3.2rem,5.8vw,6rem)/1.02 var(--serif);letter-spacing:-.01em;margin:0}
+.hero .sub{margin:28px 0 0;font-size:1.3rem;max-width:40ch;color:var(--soft)}
+.hero .acts{display:flex;align-items:center;gap:32px;flex-wrap:wrap;margin-top:38px}
+.btn{display:inline-block;background:var(--cream);color:var(--bg);font:500 1.05rem/1 var(--text);letter-spacing:.06em;padding:19px 30px;text-decoration:none}
+.btn:hover{background:#fff}
+.tel{font:500 1.15rem/1 var(--text);color:var(--cream);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px}
+.hero figure{margin:0}
+.hero figure img{width:100%;height:min(88vh,920px);object-fit:cover;object-position:50% 40%}
+/* chapters */
+.ch{padding:104px 0;border-top:1px solid var(--line)}
+.ch .head{display:flex;align-items:baseline;gap:28px;flex-wrap:wrap;margin:0 0 48px}
+.num{font:400 clamp(4rem,9vw,8.4rem)/.95 var(--serif);letter-spacing:-.02em;font-variant-numeric:lining-nums tabular-nums;margin:0;color:var(--cream)}
+.ch .cap{font:italic 400 1.5rem/1.3 var(--text);color:var(--mute);margin:0}
+.ch h2{font:400 clamp(1.9rem,3vw,2.7rem)/1.15 var(--serif);letter-spacing:-.01em;margin:0 0 20px;color:var(--cream)}
+.ch p{margin:0 0 1em;max-width:56ch;color:var(--soft)}
+.ch p:last-child{margin-bottom:0}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:center}
+.split.r{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.split figure{margin:0}
+.split figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.split figure.w img{aspect-ratio:3/2}
+.bleed{margin:0 0 64px;width:100vw;margin-left:calc(50% - 50vw)}
+.bleed img{width:100%;height:min(74vh,780px);object-fit:cover;object-position:50% 55%}
+blockquote{margin:0;font:400 1.6rem/1.4 var(--text);color:var(--cream)}
+blockquote cite{display:block;font:400 .95rem/1.4 var(--text);font-style:normal;color:var(--mute);margin-top:16px}
+.big{font:italic 400 clamp(1.7rem,2.6vw,2.4rem)/1.3 var(--serif)}
+.plates{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}
+.plates figure{margin:0}
+.plates img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.plates figcaption{font:italic 400 1.1rem/1.4 var(--text);color:var(--soft);margin-top:14px}
+/* the request */
+.slip{background:var(--bg2);border:1px solid var(--line)}
+.slip .fh{padding:24px 30px 0;font:italic 400 1.8rem/1.1 var(--serif);color:var(--cream)}
+.slip .body{padding:10px 30px 30px}
+.row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid rgba(239,230,214,.12)}
+.row:last-of-type{border-bottom:0}
+.row .k{margin:0;font-size:.85rem}
+.slip input[type=text],.slip input[type=tel],.slip input[type=date],.slip select{width:100%;border:0;border-bottom:1px solid rgba(239,230,214,.6);background:transparent;font:400 1.15rem/1.3 var(--text);color:var(--cream);padding:6px 0;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;min-height:40px;color-scheme:dark}
+.slip select{background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23efe6d6' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right center;padding-right:22px}
+.slip select option{color:#111}
+.slip input::placeholder{color:#6f665b}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.qty{display:flex;align-items:center;gap:16px}
+.qty button{width:40px;height:40px;border:1px solid var(--cream);background:transparent;font:400 1.3rem/1 var(--serif);color:var(--cream);cursor:pointer;padding:0;border-radius:50%}
+.qty output{font:400 2rem/1 var(--serif);min-width:2.4ch;text-align:center;font-variant-numeric:tabular-nums;color:var(--cream)}
+.msg{background:var(--bg);padding:16px 18px;font:400 1.02rem/1.55 var(--text);white-space:pre-wrap;margin:22px 0 18px;min-height:110px;color:var(--soft)}
+.send{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.priv{font:400 .95rem/1.45 var(--text);color:var(--mute);margin:16px 0 0}
+/* guests + where */
+.guests{padding:88px 0;border-top:1px solid var(--line)}
+.guests .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px}
+.guests blockquote{font-size:1.3rem}
+.guests .tr{font:italic 400 .95rem/1.4 var(--text);color:var(--mute);margin:24px 0 0}
+.band{width:100%}
+.band img{width:100%;height:min(72vh,720px);object-fit:cover;object-position:50% 45%}
+.where{padding:88px 0 80px}
+.where .grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:start}
+.where h2{font:400 clamp(2.4rem,4.6vw,4.2rem)/1.05 var(--serif);letter-spacing:-.01em;margin:0 0 18px;color:var(--cream)}
+.where p{margin:0 0 .6em;max-width:48ch;color:var(--soft)}
+.where .hours{font-size:1.2rem;line-height:1.75;margin:0}
+.where .hours b{font-weight:500;color:var(--cream)}
+.phone{display:inline-block;margin:28px 0 0;font:400 clamp(2.2rem,3.6vw,3.2rem)/1.1 var(--serif);color:var(--cream);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px}
+.links{margin:28px 0 0;font:400 1.1rem/1.9 var(--text)}
+.links a{display:inline-block;color:var(--cream);text-decoration:none;border-bottom:1px solid rgba(239,230,214,.4);margin:0 26px 6px 0;white-space:nowrap}
+footer{padding:0 0 56px;font:400 .95rem/1.55 var(--text);color:var(--mute)}
+footer .wrap{border-top:1px solid rgba(239,230,214,.12);padding-top:26px}
+footer p{margin:0 0 8px;max-width:100ch}
+@media(max-width:860px){
+  body{font-size:1.08rem}
+  .top{height:72px} .name small{display:none}
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero figure{order:-1} .hero figure img{height:58vh;object-position:50% 45%}
+  .hero .say{padding:34px var(--pad) 52px}
+  .k{margin-bottom:16px;font-size:.82rem} h1{font-size:2.7rem} .hero .sub{font-size:1.15rem;margin-top:18px} .hero .acts{margin-top:28px;gap:24px}
+  .ch{padding:60px 0} .ch .head{gap:16px;margin-bottom:28px} .num{font-size:3.6rem} .ch .cap{font-size:1.2rem}
+  .ch h2{font-size:1.8rem}
+  .split,.split.r{grid-template-columns:minmax(0,1fr);gap:26px}
+  .split figure{margin:0 calc(var(--pad)*-1)} .split figure img{aspect-ratio:4/5} .split figure.w img{aspect-ratio:3/2}
+  .bleed{margin-bottom:28px} .bleed img{height:46vh}
+  blockquote{font-size:1.3rem}
+  .plates{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px} .plates figcaption{font-size:1rem;margin-top:10px}
+  .slip .fh{padding:20px 20px 0;font-size:1.5rem} .slip .body{padding:8px 20px 20px}
+  .row{grid-template-columns:minmax(0,1fr);gap:6px;padding:12px 0}
+  .guests{padding:56px 0} .guests .grid{grid-template-columns:minmax(0,1fr);gap:30px}
+  .band img{height:44vh}
+  .where{padding:56px 0 52px} .where .grid{grid-template-columns:minmax(0,1fr);gap:28px}
+}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita</b> ·
+  <span data-lang="lv">Nesaistošs dizaina priekšlikums, nav restorāna oficiālā lapa.</span>
+  <span data-lang="en" hidden>A non-binding design proposal, not the restaurant's official site.</span>
+</div>
+
+<div class="wrap top">
+  <a class="name" href="#">Cotton Club<small>Abavas iela 12, Jūrmala</small></a>
+  <nav class="lang" aria-label="Valoda"><a data-set="lv" class="on">LV</a><a data-set="en">EN</a></nav>
+</div>
+
+<section class="hero">
+  <div class="say">
+    <p class="k"><span data-lang="lv">Restorāns Jaundubultos · otrdien – svētdien 12–22</span><span data-lang="en" hidden>A restaurant in Jaundubulti · Tuesday – Sunday 12–22</span></p>
+    <h1><span data-lang="lv">Vakars starp priedēm.</span><span data-lang="en" hidden>An evening among the pines.</span></h1>
+    <p class="sub"><span data-lang="lv">Banketi, jubilejas, piemiņas mielasti un klusas vakariņas — tumša koka namā ar zelta burtiem virs durvīm, dažas minūtes no jūras.</span><span data-lang="en" hidden>Banquets, anniversaries, memorial meals and quiet dinners — in a dark wooden house with gold letters over the door, minutes from the sea.</span></p>
+    <div class="acts">
+      <a class="btn" href="#vakars"><span data-lang="lv">Pieteikt svinības</span><span data-lang="en" hidden>Plan a celebration</span></a>
+      <a class="tel" href="tel:+37122828999">22 828 999</a>
+    </div>
+  </div>
+  <figure><picture><source media="(max-width:860px)" srcset="img/hero-m.jpg"><img src="img/entrance.jpg" width="1400" height="1866" fetchpriority="high" alt="Cotton Club ieeja: tumša koka fasāde, zelta burti, priedes"></picture></figure>
+</section>
+
+<section class="ch"><div class="wrap">
+  <div class="head"><p class="num">18:00</p><p class="cap"><span data-lang="lv">ierašanās</span><span data-lang="en" hidden>arrival</span></p></div>
+  <div class="split">
+    <figure><img src="img/room.jpg" width="1200" height="1600" loading="lazy" alt="Zāle: apaļš galds zem lampas, sarkani krēsli, samta aizkari"></figure>
+    <div>
+      <h2><span data-lang="lv">Nams Abavas ielā</span><span data-lang="en" hidden>The house on Abavas iela</span></h2>
+      <p><span data-lang="lv">Priedes visapkārt, zelta burti virs durvīm. Iekšā — sarkani krēsli, samta aizkari, apaļš galds zem lampas un bārs ar aizmugurējo gaismu.</span><span data-lang="en" hidden>Pines all around, gold letters over the door. Inside — red chairs, velvet curtains, a round table under a lamp and a back-lit bar.</span></p>
+      <p><span data-lang="lv">Pirmdien slēgts. Pārējās dienās no pusdienlaika līdz desmitiem vakarā.</span><span data-lang="en" hidden>Closed on Mondays. Every other day from noon until ten in the evening.</span></p>
+    </div>
+  </div>
+</div></section>
+
+<section class="ch"><div class="wrap">
+  <div class="head"><p class="num">18:30</p><p class="cap"><span data-lang="lv">galds</span><span data-lang="en" hidden>the table</span></p></div>
+  <figure class="bleed"><img src="img/banquet.jpg" width="2000" height="923" loading="lazy" alt="Garš svētku galds ar zelta galdautu, svečturiem un ziediem"></figure>
+  <div class="split r">
+    <div>
+      <h2><span data-lang="lv">Galds trīsdesmit sešiem — vai diviem</span><span data-lang="en" hidden>A table for thirty-six — or for two</span></h2>
+      <blockquote data-lang="lv">„Pasūtījām banketu, 36 cilvēkiem. Ierodoties viss bija perfekti sagatavots un jutāmies gaidīti. Gaumīgi servēts galds, garšīgs, kvalitatīvs ēdiens. Uzmanīga apkalpošana.”<cite>Google atsauksme · 5★</cite></blockquote>
+      <blockquote data-lang="en" hidden>“We ordered a banquet for 36 people. On arrival everything was perfectly prepared and we felt expected. A tastefully laid table, tasty, quality food. Attentive service.”<cite>Google review · 5★ — translated from Latvian</cite></blockquote>
+    </div>
+    <figure class="w"><img src="img/table.jpg" width="1800" height="1200" loading="lazy" alt="Balts svētku galds ar svecēm, ziediem un rožu ziedlapām"></figure>
+  </div>
+</div></section>
+
+<section class="ch"><div class="wrap">
+  <div class="head"><p class="num">19:30</p><p class="cap"><span data-lang="lv">šķīvis</span><span data-lang="en" hidden>the plate</span></p></div>
+  <div class="plates">
+    <figure><img src="img/oysters.jpg" width="1000" height="1250" loading="lazy" alt="Austeres uz šķīvjiem"><figcaption><span data-lang="lv">Austeres</span><span data-lang="en" hidden>Oysters</span></figcaption></figure>
+    <figure><img src="img/steak.jpg" width="1000" height="1250" loading="lazy" alt="Liellopa steiks ar grilētiem dārzeņiem"><figcaption><span data-lang="lv">Liellopa steiks ar grilētiem dārzeņiem</span><span data-lang="en" hidden>Beef steak with grilled vegetables</span></figcaption></figure>
+    <figure><img src="img/plate.jpg" width="1000" height="1250" loading="lazy" alt="Svētku šķīvis: vista, kartupeļu biezenis, pupiņas"><figcaption><span data-lang="lv">Svētku šķīvis pie galda</span><span data-lang="en" hidden>A festive plate at the table</span></figcaption></figure>
+    <figure><img src="img/pavlova.jpg" width="1000" height="1249" loading="lazy" alt="Pavlova ar meža ogām"><figcaption><span data-lang="lv">Pavlova ar meža ogām</span><span data-lang="en" hidden>Pavlova with forest berries</span></figcaption></figure>
+  </div>
+</div></section>
+
+<section class="ch"><div class="wrap">
+  <div class="head"><p class="num">21:00</p><p class="cap"><span data-lang="lv">saimnieks</span><span data-lang="en" hidden>the host</span></p></div>
+  <div class="split r">
+    <div>
+      <blockquote class="big" data-lang="lv">„Sirds ir ielikta katrā detaļā, Saimnieka viesmīlība, vērīgums & attieksme līmenī, ko mūsdienās praktiski vairs nesastapt. Īpaša atmosfēra, miers & izcilas kvalitātes ēdiens.”<cite>Laura G. · Google · 5★</cite></blockquote>
+      <blockquote class="big" data-lang="en" hidden>“Heart is put into every detail; the host's hospitality, attentiveness and attitude are at a level you practically no longer meet these days. A special atmosphere, peace and food of excellent quality.”<cite>Laura G. · Google · 5★ — translated from Latvian</cite></blockquote>
+    </div>
+    <figure><img src="img/lounge.jpg" width="1200" height="1600" loading="lazy" alt="Zāles stūris: ādas dīvāns, gleznas, galdiņi ar baltiem galdautiem"></figure>
+  </div>
+</div></section>
+
+<section class="ch" id="vakars"><div class="wrap">
+  <div class="head"><p class="num" id="pick">—</p><p class="cap"><span data-lang="lv">jūsu vakars</span><span data-lang="en" hidden>your evening</span></p></div>
+  <div class="split">
+    <div>
+      <h2><span data-lang="lv">Svinību pieteikums</span><span data-lang="en" hidden>A celebration request</span></h2>
+      <p><span data-lang="lv">Iemesls, viesu skaits un datums — ziņa aiziet restorānam, un tālākais tiek sarunāts pa tālruni. Klusām vakariņām diviem pietiek ar zvanu.</span><span data-lang="en" hidden>The occasion, the number of guests and the date — the message reaches the restaurant and the rest is arranged by phone. For a quiet dinner for two, a call is enough.</span></p>
+    </div>
+    <form class="slip" id="slip" onsubmit="return false">
+      <div class="fh"><span data-lang="lv">Svinības Cotton Club</span><span data-lang="en" hidden>A celebration at Cotton Club</span></div>
+      <div class="body">
+        <div class="row"><span class="k"><span data-lang="lv">Iemesls</span><span data-lang="en" hidden>Occasion</span></span>
+          <select id="occ">
+            <option value="j" data-lv="jubileja" data-en="an anniversary">jubileja</option>
+            <option value="k" data-lv="kāzu mielasts" data-en="a wedding dinner">kāzu mielasts</option>
+            <option value="p" data-lv="piemiņas mielasts" data-en="a memorial meal">piemiņas mielasts</option>
+            <option value="u" data-lv="uzņēmuma vakars" data-en="a company evening">uzņēmuma vakars</option>
+            <option value="c" data-lv="cits iemesls" data-en="another occasion">cits iemesls</option>
+          </select></div>
+        <div class="row"><span class="k"><span data-lang="lv">Viesi</span><span data-lang="en" hidden>Guests</span></span>
+          <div class="qty"><button type="button" id="minus" aria-label="mazāk">−</button><output id="qty">20</output><button type="button" id="plus" aria-label="vairāk">+</button></div></div>
+        <div class="row"><span class="k"><span data-lang="lv">Kad</span><span data-lang="en" hidden>When</span></span>
+          <div class="two"><input type="date" id="date"><select id="time"></select></div></div>
+        <div class="row"><span class="k"><span data-lang="lv">Vēlmes</span><span data-lang="en" hidden>Wishes</span></span>
+          <input type="text" id="wish" data-ph-lv="piem., atsevišķa telpa, kūka, mūzika" data-ph-en="e.g. a private room, a cake, music" placeholder="piem., atsevišķa telpa, kūka, mūzika" autocomplete="off"></div>
+        <div class="row"><span class="k"><span data-lang="lv">Vārds</span><span data-lang="en" hidden>Name</span></span><input type="text" id="name" autocomplete="name"></div>
+        <div class="row"><span class="k"><span data-lang="lv">Tālrunis</span><span data-lang="en" hidden>Phone</span></span><input type="tel" id="phone" autocomplete="tel" inputmode="tel"></div>
+        <div class="msg" id="msg" aria-live="polite"></div>
+        <div class="send">
+          <a class="btn" id="sms" href="#"><span data-lang="lv">Sūtīt SMS</span><span data-lang="en" hidden>Send as SMS</span></a>
+          <a class="tel" href="tel:+37122828999"><span data-lang="lv">vai zvanīt 22 828 999</span><span data-lang="en" hidden>or call 22 828 999</span></a>
+        </div>
+        <p class="priv"><span data-lang="lv">Ziņa top jūsu ierīcē — šī lapa neko neglabā.</span><span data-lang="en" hidden>The message is composed on your device — this page stores nothing.</span></p>
+      </div>
+    </form>
+  </div>
+</div></section>
+
+<section class="guests"><div class="wrap">
+  <p class="k"><span data-lang="lv">Viesi · 4,5★ no 182 atsauksmēm</span><span data-lang="en" hidden>Guests · 4.5★ from 182 reviews</span></p>
+  <div class="grid" data-lang="lv">
+    <blockquote>Perfekta vieta, atmosfēra, ļoti gardi ēdieni, apkalpošana un saimnieks.<cite>Iveta · Google · 5★</cite></blockquote>
+    <blockquote>Lieliska vieta klusām vakariņām vai arī kādas jubilejas svinēšanai. Ļoti gardi!<cite>Oskars C. · Google · 5★</cite></blockquote>
+    <blockquote>Viss bija vislabākajā līmenī un no sirds.<cite>Anete D. · Google · 5★</cite></blockquote>
+  </div>
+  <div class="grid" data-lang="en" hidden>
+    <blockquote>A perfect place, atmosphere, very tasty food, service and the host.<cite>Iveta · Google · 5★</cite></blockquote>
+    <blockquote>A great place for a quiet dinner or for celebrating an anniversary. Very tasty!<cite>Oskars C. · Google · 5★</cite></blockquote>
+    <blockquote>Everything was at the highest level and from the heart.<cite>Anete D. · Google · 5★</cite></blockquote>
+  </div>
+  <p class="tr" data-lang="en" hidden>Translated from Latvian.</p>
+</div></section>
+
+<div class="band"><img src="img/hero.jpg" width="1800" height="1012" loading="lazy" alt="Ieeja ar zelta burtiem COTTON CLUB starp priedēm"></div>
+
+<section class="where"><div class="wrap"><div class="grid">
+  <div>
+    <h2>Abavas iela 12</h2>
+    <p><span data-lang="lv">Jaundubulti, Jūrmala, LV-2015 — starp priedēm, dažas minūtes no jūras.</span><span data-lang="en" hidden>Jaundubulti, Jūrmala, LV-2015 — among the pines, minutes from the sea.</span></p>
+    <a class="phone" href="tel:+37122828999">22 828 999</a>
+    <p class="links"><a href="https://www.facebook.com/Cotton-Club-327384674025191/" rel="noopener">Facebook ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Cotton+Club+Abavas+iela+12+J%C5%ABrmala" rel="noopener"><span data-lang="lv">Google kartē ↗</span><span data-lang="en" hidden>Google Maps ↗</span></a></p>
+  </div>
+  <div>
+    <p class="hours" data-lang="lv"><b>Pirmdien</b> slēgts<br><b>Otrdien – svētdien</b> 12:00 – 22:00<br><span style="color:var(--mute)">kā Google kartēs</span></p>
+    <p class="hours" data-lang="en" hidden><b>Monday</b> closed<br><b>Tuesday – Sunday</b> 12:00 – 22:00<br><span style="color:var(--mute)">as on Google Maps</span></p>
+  </div>
+</div></div></section>
+
+<footer><div class="wrap">
+  <p><span data-lang="lv">Fotogrāfijas: Cotton Club LATVIJA (svētku galdi, austeres) un viesi Google kartēs — Mantas Brazdžionis (ieeja), Talal Abdallah (zāle), Sia Madame (zāles stūris), Kristīna G. (steiks), Tatjana Zubkova (pavlova), Sveta L. (šķīvis) · Fakti: Google kartes, jurmala.pilseta24.lv.</span><span data-lang="en" hidden>Photographs: Cotton Club LATVIJA (festive tables, oysters) and guests on Google Maps — Mantas Brazdžionis (entrance), Talal Abdallah (room), Sia Madame (lounge), Kristīna G. (steak), Tatjana Zubkova (pavlova), Sveta L. (plate) · Facts: Google Maps, jurmala.pilseta24.lv.</span></p>
+  <p><span data-lang="lv">Ja priekšlikums interesē — nākamais solis: jūsu pašu fotogrāfijas, banketu piedāvājums ar cenām lapā, viens tālrunis visur (katalogos šobrīd trīs dažādi), lapa jūsu adresē un poga „Vietne” Google kartēs, kas šobrīd ved uz Facebook. Dizaina priekšlikums: Nikita · ngoloveckis@gmail.com</span><span data-lang="en" hidden>If this proposal is of interest — the next step: your own photographs, the banquet offer with prices on the page, one phone number everywhere (directories show three today), this page at your own address and the “Website” button on Google Maps, which now leads to Facebook. Design proposal: Nikita · ngoloveckis@gmail.com</span></p>
+</div></footer>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  let lang='lv', qty=20;
+  const T={lv:{hello:'Labdien! Vēlos pieteikt svinības Cotton Club.',occ:'Iemesls',n:'Viesu skaits',when:'Kad',about:'ap',wish:'Vēlmes',name:'Vārds',phone:'Tālrunis',dash:'…'},en:{hello:'Hello! I would like to plan a celebration at Cotton Club.',occ:'Occasion',n:'Guests',when:'When',about:'around',wish:'Wishes',name:'Name',phone:'Phone',dash:'…'}};
+  const time=$('#time');for(let h=12;h<=20;h++){const o=document.createElement('option');o.value=o.textContent=String(h).padStart(2,'0')+':00';if(h===18)o.selected=true;time.appendChild(o)}
+  const d=new Date();d.setDate(d.getDate()+14);$('#date').value=d.toISOString().slice(0,10);$('#date').min=new Date().toISOString().slice(0,10);
+  const fdate=v=>{if(!v)return T[lang].dash;const [y,m,dd]=v.split('-');return `${dd}.${m}.${y}`};
+  function pick(){const v=$('#date').value;$('#pick').textContent=v?`${v.slice(8,10)}.${v.slice(5,7)}.`:'—'}
+  function build(){const t=T[lang];const oc=$('#occ');const on=oc.options[oc.selectedIndex].dataset[lang];const w=$('#wish').value.trim();const L=[t.hello,`${t.occ}: ${on}`,`${t.n}: ${qty}`,`${t.when}: ${fdate($('#date').value)}, ${t.about} ${time.value}`,`${t.wish}: ${w||t.dash}`,`${t.name}: ${$('#name').value.trim()||t.dash} · ${t.phone}: ${$('#phone').value.trim()||t.dash}`];const m=L.join('\n');$('#msg').textContent=m;$('#sms').href='sms:+37122828999?&body='+encodeURIComponent(m);pick()}
+  function setLang(l){lang=l;$$('[data-lang]').forEach(e=>{e.hidden=e.dataset.lang!==l});document.documentElement.lang=l;$$('.lang a').forEach(a=>a.classList.toggle('on',a.dataset.set===l));$('#wish').placeholder=$('#wish').dataset['ph'+(l==='lv'?'Lv':'En')];[...$('#occ').options].forEach(o=>o.textContent=o.dataset[l]);build()}
+  $$('.lang a').forEach(a=>a.addEventListener('click',()=>setLang(a.dataset.set)));
+  $('#minus').addEventListener('click',()=>{qty=Math.max(2,qty-1);$('#qty').value=qty;build()});
+  $('#plus').addEventListener('click',()=>{qty=Math.min(200,qty+1);$('#qty').value=qty;build()});
+  $$('#slip input,#slip select').forEach(e=>{e.addEventListener('input',build);e.addEventListener('change',build)});
+  build();
+})();
+</script>
+</body>
+</html>
